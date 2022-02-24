@@ -19,19 +19,19 @@ class Song(BaseEntity):
         self.artist = body['primary_artist']['name']
         self.lyrics = lyrics if lyrics else ""
         self.primary_artist = Artist(client, body['primary_artist'])
-        self.stats = Stats(body['stats'])
+        # self.stats = Stats(body['stats'])
 
-        self.annotation_count = body['annotation_count']
+        # self.annotation_count = body['annotation_count']
         self.api_path = body['api_path']
         self.full_title = body['full_title']
-        self.header_image_thumbnail_url = body['header_image_thumbnail_url']
-        self.header_image_url = body['header_image_url']
-        self.lyrics_owner_id = body['lyrics_owner_id']
+        # self.header_image_thumbnail_url = body['header_image_thumbnail_url']
+        # self.header_image_url = body['header_image_url']
+        # self.lyrics_owner_id = body['lyrics_owner_id']
         self.lyrics_state = body['lyrics_state']
         self.path = body['path']
-        self.pyongs_count = body['pyongs_count']
-        self.song_art_image_thumbnail_url = body['song_art_image_thumbnail_url']
-        self.song_art_image_url = body['song_art_image_url']
+        # self.pyongs_count = body['pyongs_count']
+        # self.song_art_image_thumbnail_url = body['song_art_image_thumbnail_url']
+        # self.song_art_image_url = body['song_art_image_url']
         self.title = body['title']
         self.title_with_featured = body['title_with_featured']
         self.url = body['url']
